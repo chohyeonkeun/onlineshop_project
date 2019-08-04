@@ -1,5 +1,5 @@
 import os
-import secret
+from secret import db_info, aws_info
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -216,8 +216,8 @@ LOGIN_REDIRECT_URL = reverse_lazy('index')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = 'positipman@gmail.com '
-EMAIL_HOST_PASSWORD = 'GOQLT5857!'
+EMAIL_HOST_USER = '이메일 주소'
+EMAIL_HOST_PASSWORD = '비밀번호 입력'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -225,5 +225,5 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # 장바구니
 CART_ID = 'user_cart' # 임의로 설정한 값
 
-IAMPORT_KEY = '4082649276593131'
-IAMPORT_SECRET = 'ENmAN5rg9hyOHv2rbBnyMKKYAzHc4ZNIM9jAfKQo2odJUfa6RyEDipCTYk53jSM525GiQwHSVUCQaNX1'
+IAMPORT_KEY = 'IAMPORT KEY'
+IAMPORT_SECRET = 'IAMPORT 비밀번호'
